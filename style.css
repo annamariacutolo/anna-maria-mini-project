@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(244, 206, 243);
+}
+
+h1 {
+  text-align: center;
+  font-family: "comic sans ms";
+  font-size: 60px;
+  color: rgb(239, 118, 142);
+  text-shadow: 2px 2px rgb(243, 81, 113);
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 133px 133px 133px;
+  background-color: rgb(221, 128, 240);
+  padding: 20px;
+  width: 400px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.board div {
+  display: flex;
+  background-color: rgb(180, 155, 120);
+  border: 10px solid rgb(59, 45, 18);
+  padding: 10px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.player-form {
+  padding-top: 20px;
+  padding-left: 200px;
+}
+
+.scoreboard {
+  display: inline-block;
+}
+
+

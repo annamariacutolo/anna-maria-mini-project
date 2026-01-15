@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <h1>Noughts and Crosses</h1>
+    <div class="board-container">
+      <div class="board">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <div class="player-form">
+        <form class="input-players" method="post">
+          <label for="player1">Player 1:</label>
+          <input type="text" id="player1" name="player1"><br><br>
+          <label for="player2">Player 2:</label>
+          <input type="text" id="player2" name="player2"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="players">
+        <div id="player1-score"></div><p>Score:</p>
+        <div id="player2-score"></div><p>Score:</p>
+      </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
