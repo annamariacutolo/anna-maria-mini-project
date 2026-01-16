@@ -10,6 +10,11 @@ h1 {
   text-shadow: 2px 2px rgb(243, 81, 113);
 }
 
+h3 {
+  font-family: "comic sans ms";
+  color: rgb(161, 40, 40);
+}
+
 .board-container {
   display: flex;
   justify-content: center;
@@ -39,12 +44,19 @@ h1 {
 }
 
 .player-form {
+  display: block;
   padding-top: 20px;
   padding-left: 200px;
 }
 
 .scoreboard {
-  display: inline-block;
+  display: none;
+  padding-top: 20px;
+  padding-left: 200px;
+}
+
+.board div p {
+  display: none;
 }
 
 
