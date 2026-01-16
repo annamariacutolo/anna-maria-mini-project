@@ -37,10 +37,16 @@ h3 {
   background-color: rgb(180, 155, 120);
   border: 10px solid rgb(59, 45, 18);
   padding: 10px;
-  font-size: 30px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.board div p {
+  font-family: "Arial";
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(83, 2, 80);
 }
 
 .player-form {
@@ -55,8 +61,5 @@ h3 {
   padding-left: 200px;
 }
 
-.board div p {
-  display: none;
-}
 
 
