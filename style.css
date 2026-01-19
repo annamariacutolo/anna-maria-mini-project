@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(244, 206, 243);
+  background-image: linear-gradient(to bottom, #f4cef3, #e7c9f3, #d8c5f3, #c8c2f2, #b7bef0, #aac2f5, #9cc6f7, #8dcaf8, #82d7fc, #7de3fc, #80eef8, #8cf8f1);
 }
 
 h1 {
@@ -7,12 +7,12 @@ h1 {
   font-family: "comic sans ms";
   font-size: 60px;
   color: rgb(239, 118, 142);
-  text-shadow: 2px 2px rgb(243, 81, 113);
+  text-shadow: 2px 2px 1px rgb(206, 68, 95);
 }
 
 h3 {
-  font-family: "comic sans ms";
-  color: rgb(161, 40, 40);
+  font-family: "Arial";
+  color: rgb(239, 118, 142);
 }
 
 .board-container {
@@ -25,41 +25,86 @@ h3 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 133px 133px 133px;
-  background-color: rgb(221, 128, 240);
+  background-color: #6b74be;
+  box-shadow: 0px 0px 3px 3px #3b406c;
   padding: 20px;
   width: 400px;
   row-gap: 5px;
-  column-gap: 5px;
+  column-gap: 7px;
 }
 
 .board div {
   display: flex;
-  background-color: rgb(180, 155, 120);
-  border: 10px solid rgb(59, 45, 18);
+  background-color: #21a0a0;
+  border: 10px solid #046865;
+  box-shadow: inset 0px 0px 5px 2px #03413f;
   padding: 10px;
+  width: 90px;
+  height: 90px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.board div p {
   font-family: "Arial";
   font-size: 60px;
   font-weight: bold;
-  color: rgb(83, 2, 80);
+  text-shadow: 1px 1px 5px #046865;
+}
+
+.board div:hover {
+  background-color: #2ac7c7;
+}
+
+.input-error {
+  display: none;
+  text-align: center;
 }
 
 .player-form {
   display: block;
   padding-top: 20px;
-  padding-left: 200px;
+  text-align: center;
+  font-family: "Arial";
+  color: #042a2b;
 }
 
 .scoreboard {
   display: none;
-  padding-top: 20px;
-  padding-left: 200px;
+  text-align: center;
+  font-family: "Arial";
+  color: #042a2b;
 }
 
+.scoreboard div {
+  background-color: #f4cef3;
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 3px solid #ab4a5d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px #ab4a5d;
+}
 
+input[type=text] {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #ab4a5d;
+  background-color: #f4cef3;
+  color: #042a2b;
+}
 
+input[type=text]:focus {
+  outline: none;
+  border-color: #da7b8d;
+  background-color: #ec9eac;
+}
+
+input[type=submit] {
+  margin-left: 40px;
+  background-image: linear-gradient(to bottom, #ab4a5d, #ba5b6d, #c96b7d, #d87c8d, #e78d9e, #e78d9e, #e78d9e, #e78d9e, #d87c8d, #c96b7d, #ba5b6d, #ab4a5d);  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: #ab4a5d;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-image: linear-gradient(to bottom, #d16a7e, #da7b8d, #e38d9d, #ec9eac, #f4afbc, #f4afbc, #f4afbc, #f4afbc, #ec9eac, #e38d9d, #da7b8d, #d16a7e);
+}

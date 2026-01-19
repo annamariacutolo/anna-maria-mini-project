@@ -12,16 +12,20 @@
 
     <div class="board-container">
       <div class="board">
-        <div><p id="1"></p></div>
-        <div><p id="2"></p></div>
-        <div><p id="3"></p></div>
-        <div><p id="4"></p></div>
-        <div><p id="5"></p></div>
-        <div><p id="6"></p></div>
-        <div><p id="7"></p></div>
-        <div><p id="8"></p></div>
-        <div><p id="9"></p></div>
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
+        <div id="8"></div>
+        <div id="9"></div>
       </div>
+    </div>
+
+    <div class="input-error">
+      <h3>Please input player names.</h3>
     </div>
 
     <div class="player-form">
@@ -30,16 +34,19 @@
         <input type="text" id="player1-input" name="player1"><br><br>
         <label for="player2">Player 2:</label>
         <input type="text" id="player2-input" name="player2"><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" id="submit-btn" value="Submit">
       </form>
     </div>
 
     <div class="scoreboard">
       <h3>Let battle commence!</h3>
-      <p><span id="player1">Player 1</span>: <span id="player1-score">0</span></p>
-      <p><span id="player2">Player 2</span>: <span id="player2-score">0</span></p>
+      <div>
+        <p><span id="player1">Player 1</span>: <span id="player1-score">0</span></p>
+        <p><span id="player2">Player 2</span>: <span id="player2-score">0</span></p>
+      </div>
     </div>
 
 <script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
