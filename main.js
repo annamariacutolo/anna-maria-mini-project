@@ -11,6 +11,7 @@ const score2 = document.getElementById("player2-score")
 const board = document.querySelector(".board")
 const squares = document.querySelectorAll(".board div")
 const message = document.querySelector(".scoreboard h3")
+const button = document.querySelector("#button")
 
 // turns
 let turn = 0
@@ -60,6 +61,16 @@ const reset = () => {
   turn = 0
   winner = false
 }
+
+// reset scoreboard
+button.addEventListener("click", () => {
+  reset()
+  players.player1Info.playerScore = 0
+  players.player2Info.playerScore = 0
+
+  score1.textContent = 0
+  score2.textContent = 0
+})
 
 // check for player names before game begins
 board.addEventListener("click", () => {
